@@ -1,4 +1,4 @@
-package com.mark85.basic.config.mybatis_plus;
+package com.mark85.basic.aop;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import lombok.extern.slf4j.Slf4j;

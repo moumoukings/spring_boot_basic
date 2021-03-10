@@ -1,7 +1,7 @@
 spring:
   # 配置数据库连接池
   datasource:
-    url: jdbc:mysql://218.244.150.165:3306/spring_boot_basic?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://218.244.150.165:3306/spring_boot_basic?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
     username: root
     password: root
   ### 配置Redis
@@ -10,3 +10,8 @@ spring:
     host: 218.244.150.165
     port: 6379
     password: 1470634109
+
+#日志配置
+logging:
+  level:
+    com.mark85.basic.mapper: debug

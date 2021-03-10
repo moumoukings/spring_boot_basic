@@ -5,11 +5,13 @@ server:
     context-path: /spring_boot_basic
 spring:
   jackson:
-    date-format: yyyy-MM-dd hh:mm:ss
+    date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   profiles:
     # 选择环境
     active: @activatedProperties@
+  main:
+    banner-mode: off
   # 配置数据库连接池
   datasource:
 #    type: com.zaxxer.hikari.HikariDataSource
@@ -46,12 +48,16 @@ spring:
 mybatis-plus:
   # xml路径
   mapper-locations: classpath:mapping/*Mapper.xml
+  global-config:
+    banner: off
+#  type-aliases-package: com.mark85..basic.entity.vo
 
 # 配置swagger
 swagger:
-  version: 2.0
+  version: 1.0
   groupName: 基础项目
   title: 基础项目
   description: 接口文档
+  author: zhangzichen
   # 扫描的包路径
   basePackage: com.mark85.basic.controller

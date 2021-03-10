@@ -5,7 +5,7 @@ CREATE DATABASE spring_boot_basic;
 CREATE TABLE `user` (
     `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
     `nickname` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '昵称',
-    `birthday` date NOT NULL COMMENT '生日',
+    `birthday` datetime NOT NULL COMMENT '生日',
     `username` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '用户名',
     `password` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '密码',
     `status` varchar(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '0' COMMENT '状态 ',

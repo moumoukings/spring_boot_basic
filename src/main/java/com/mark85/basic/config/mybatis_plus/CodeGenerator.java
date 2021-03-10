@@ -111,7 +111,7 @@ public class CodeGenerator {
         PackageConfig pc = new PackageConfig();
         pc.setParent(PACKAGE_PARENT);
         //包下模块名
-        pc.setModuleName("spring_boot_basic");
+        //pc.setModuleName("spring_boot_basic");
         //模块下包名
         pc.setController("controller");
         pc.setEntity("entity");

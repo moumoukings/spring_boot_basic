@@ -57,12 +57,12 @@ public class SwaggerConfiguration {
         StringVendorExtension vendorExtension = new StringVendorExtension("", "");
         Collection<VendorExtension> vendorExtensions = new ArrayList<>();
         vendorExtensions.add(vendorExtension);
-        Contact contact = new Contact("", "", "");
+        Contact contact = new Contact(swaggerInfo.getAuthor(), "", "");
         return new ApiInfo(
                 swaggerInfo.getTitle(),
                 swaggerInfo.getDescription(),
                 swaggerInfo.getVersion(),
-                "", contact, "", "",
+                "服务器url", contact, "", "",
                 vendorExtensions);
     }
 }
