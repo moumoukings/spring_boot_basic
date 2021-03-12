@@ -4,8 +4,12 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.mark85.basic.demo.user.AddUserDemo;
 import com.mark85.basic.demo.user.ListUserDemo;
 import com.mark85.basic.entity.UserDo;
+import com.mark85.basic.entity.query.UserPageQuery;
+import com.mark85.basic.entity.response.UserPageResp;
 import com.mark85.basic.entity.vo.PageVo;
 import com.mark85.basic.entity.vo.UserVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -39,4 +43,11 @@ public interface UserDoService extends IService<UserDo> {
      * @param id
      */
     void deleteUser(String id);
+
+    /**
+     * 用pageHelp分页
+     * @param pageQuery
+     * @return
+     */
+    List<UserPageResp> page(UserPageQuery pageQuery);
 }

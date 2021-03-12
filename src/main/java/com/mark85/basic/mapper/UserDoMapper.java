@@ -3,6 +3,8 @@ package com.mark85.basic.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.mark85.basic.demo.user.ListUserDemo;
 import com.mark85.basic.entity.UserDo;
+import com.mark85.basic.entity.query.UserPageQuery;
+import com.mark85.basic.entity.response.UserPageResp;
 import com.mark85.basic.entity.vo.UserVo;
 import org.apache.ibatis.annotations.Select;
 
@@ -26,4 +28,12 @@ public interface UserDoMapper extends BaseMapper<UserDo> {
      */
     @Select("SELECT id,nickname,username,birthday FROM `user` WHERE `status`= #{status} AND `is_deleted`= 'false' LIMIT #{current},#{size}")
     List<UserVo> listUser(ListUserDemo listUserDemo);
+
+    /**
+     * 用pageHelp分页
+     *
+     * @param pageQuery
+     * @return
+     */
+    List<UserPageResp> getUserPage(UserPageQuery pageQuery);
 }

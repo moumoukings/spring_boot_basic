@@ -20,6 +20,16 @@
         id, nickname, birthday, username, password, status, gmt_create, gmt_modified, is_deleted, version
     </sql>
 
+    <select id="getUserPage" resultType="com.mark85.basic.entity.response.UserPageResp">
+        select <include refid="Base_Column_List"/>
+        from user
+        <where>
+            <if test="status != null and status != ''">
+                status=#{status}
+            </if>
+        </where>
+    </select>
+
    <!-- <select id="listUser" resultType="com.mark85.basic.entity.vo.UserVo">
         select
         id,nickname,username,birthday

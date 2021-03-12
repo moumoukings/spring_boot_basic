@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mark85.basic.demo.user.AddUserDemo;
 import com.mark85.basic.demo.user.ListUserDemo;
 import com.mark85.basic.entity.UserDo;
+import com.mark85.basic.entity.query.UserPageQuery;
+import com.mark85.basic.entity.response.UserPageResp;
 import com.mark85.basic.entity.vo.PageVo;
 import com.mark85.basic.entity.vo.UserVo;
 import com.mark85.basic.enums.ResultEnum;
@@ -14,6 +16,8 @@ import com.mark85.basic.service.UserDoService;
 import com.mark85.basic.utils.MethodUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -56,6 +60,15 @@ public class UserDoServiceImpl extends ServiceImpl<UserDoMapper, UserDo> impleme
     }
 
     /**
+     * 获取用户数量
+     * @param status 状态
+     * @return 用户数量
+     */
+    private Integer countUser(String status){
+        return count(new QueryWrapper<UserDo>().eq("status",status));
+    }
+
+    /**
      * 删除用户
      *
      * @param id
@@ -69,11 +82,13 @@ public class UserDoServiceImpl extends ServiceImpl<UserDoMapper, UserDo> impleme
     }
 
     /**
-     * 获取用户数量
-     * @param status 状态
-     * @return 用户数量
+     * 用pageHelp分页
+     * @param pageQuery
+     * @return
      */
-    private Integer countUser(String status){
-        return count(new QueryWrapper<UserDo>().eq("status",status));
+    @Override
+    public List<UserPageResp> page(UserPageQuery pageQuery) {
+        return userDoMapper.getUserPage(pageQuery);
     }
+
 }
