@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       		           http://www.springframework.org/schema/beans/spring-beans.xsd
+       		           http://code.alibabatech.com/schema/dubbo
+       		           http://code.alibabatech.com/schema/dubbo/dubbo.xsd"
+       default-lazy-init="true"
+       >
+
+    <!--仓库-->
+    <dubbo:reference
+            id="erp.storeErpAgentSpi"
+            interface="com.rubansh.commerce.erp.client.service.StoreErpAgentSpi"
+            version="1.0.0"
+            owner="erpAgent"
+    />
+
+    <dubbo:reference
+            id="userProcessService"
+            interface="com.bopu.access.client.service.UserProcessService"
+            version="${rpc.consumer.access.center.version}"
+    />
+
+    <dubbo:reference
+            id="applicationProcessService"
+            interface="com.bopu.access.client.service.ApplicationProcessService"
+            version="${rpc.consumer.access.center.version}"
+    />
+
+    <dubbo:reference
+            id="functionProcessService"
+            interface="com.bopu.access.client.service.FunctionProcessService"
+            version="${rpc.consumer.access.center.version}"
+    />
+
+    <dubbo:reference
+            id="roleFunctionProcessService"
+            interface="com.bopu.access.client.service.RoleFunctionProcessService"
+            version="${rpc.consumer.access.center.version}"
+    />
+
+
+</beans>

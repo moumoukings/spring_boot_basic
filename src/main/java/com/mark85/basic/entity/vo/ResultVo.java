@@ -11,7 +11,7 @@ import lombok.Data;
  * @date 2021/03/10 12:52
  */
 @Data
-@ApiModel("固定返回格式")
+@ApiModel(value = "固定返回格式")
 public class ResultVo {
 
     /**

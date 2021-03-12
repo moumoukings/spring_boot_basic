@@ -3,7 +3,6 @@ package com.mark85.basic.aop;
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.reflection.MetaObject;
-import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
 
@@ -14,7 +13,6 @@ import java.sql.Timestamp;
  * @date 2021/03/10 13:29
  */
 @Slf4j
-@Component
 public class MybatisPlusMetaObjectHandler implements MetaObjectHandler {
 
     private static boolean ISDELETED = false;

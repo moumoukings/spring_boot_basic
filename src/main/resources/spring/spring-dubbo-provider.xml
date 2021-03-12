@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       		           http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
+
+
+    <!--<dubbo:service id="userReadServiceProvider"
+                   interface="UserReadService"
+                   ref="userReadService"
+                   version="${rpc.scm.user.version}"
+                   group="scm"
+                   timeout="3000"/>
+
+    <dubbo:service id="userWriteServiceProvider"
+                   interface="UserWriteService"
+                   ref="userWriteService"
+                   version="${rpc.scm.user.version}"
+                   group="scm"
+                   timeout="3000"/>
+
+
+    <bean id="payRecordReadService" class="com.bopu.trade.service.interfaces.PayRecordReadServiceImpl"/>
+    <bean id="tradeReadService" class="com.bopu.trade.service.interfaces.TradeReadServiceImpl"/>
+    <bean id="tradeWriteService" class="com.bopu.trade.service.interfaces.TradeWriteServiceImpl"/>
+    <bean id="receivingAddressReadService" class="com.bopu.trade.service.interfaces.ReceivingAddressReadServiceImpl"/>
+    <bean id="receivingAddressWriteService" class="com.bopu.trade.service.interfaces.ReceivingAddressWriteServiceImpl"/>
+    <bean id="areaReadService" class="com.bopu.trade.service.interfaces.AreaReadServiceImpl"/>
+    <bean id="orderAuditRecordReadService" class="com.bopu.trade.service.interfaces.OrderAuditRecordReadServiceImpl"/>
+    <bean id="orderAuditRecordWriteService" class="com.bopu.trade.service.interfaces.OrderAuditRecordWriteServiceImpl"/>
+    <bean id="logisticsReadService" class="com.bopu.trade.service.interfaces.LogisticsReadServiceImpl"/>
+
+    <bean id="logisticsPackageReadService" class="com.bopu.trade.service.interfaces.LogisticsPackageReadServiceImpl"/>
+    <bean id="logisticsPackageWriteService" class="com.bopu.trade.service.interfaces.LogisticsPackageWriteServiceImpl"/>
+    <dubbo:service id="logisticsPackageReadServiceProvider"
+                   interface="com.bopu.trade.client.service.LogisticsPackageReadService"
+                   ref="logisticsPackageReadService"
+                   version="${rpc.scm.trade.version}"
+                   group="scm"
+                   timeout="3000"/>
+
+    <dubbo:service id="logisticsPackageWriteServiceProvider"
+                   interface="com.bopu.trade.client.service.LogisticsPackageWriteService"
+                   ref="logisticsPackageWriteService"
+                   version="${rpc.scm.trade.version}"
+                   group="scm"
+                   timeout="3000"/>
+
+    <dubbo:service id="tradeReadServiceProvider"
+                   interface="com.bopu.trade.client.service.TradeReadService"
+                   ref="tradeReadService"
+                   version="${rpc.scm.trade.version}"
+                   group="scm"
+                   timeout="3000"/>
+
+    <dubbo:service id="tradeWriteServiceProvider"
+                   interface="com.bopu.trade.client.service.TradeWriteService"
+                   ref="tradeWriteService"
+                   version="${rpc.scm.trade.version}"
+                   group="scm"
+                   timeout="3000"/>
+
+    <dubbo:service id="orderAuditRecordReadServiceProvider"
+                   interface="com.bopu.trade.client.service.OrderAuditRecordReadService"
+                   ref="orderAuditRecordReadService"
+                   version="${rpc.scm.trade.version}"
+                   group="scm"
+                   timeout="3000"/>
+
+    <dubbo:service id="orderAuditRecordWriteServiceProvider"
+                   interface="com.bopu.trade.client.service.OrderAuditRecordWriteService"
+                   ref="orderAuditRecordWriteService"
+                   version="${rpc.scm.trade.version}"
+                   group="scm"
+                   timeout="3000"/>
+
+    <dubbo:service id="payRecordReadServiceProvider"
+                   interface="com.bopu.trade.client.service.PayRecordReadService"
+                   ref="payRecordReadService"
+                   version="${rpc.scm.trade.version}"
+                   group="scm"
+                   timeout="3000"/>-->
+</beans>

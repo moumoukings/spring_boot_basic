@@ -5,7 +5,6 @@ import com.mark85.basic.demo.user.ListUserDemo;
 import com.mark85.basic.entity.UserDo;
 import com.mark85.basic.entity.vo.UserVo;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -17,7 +16,6 @@ import java.util.List;
  * @author zhangzichen
  * @since 2021-03-10
  */
-@Repository
 public interface UserDoMapper extends BaseMapper<UserDo> {
 
     /**

@@ -16,14 +16,14 @@ import javax.validation.constraints.NotEmpty;
  * @date 2021/03/10 14:11
  */
 @Data
-@ApiModel("获取用户列表需要的表单数据")
+@ApiModel(value = "获取用户列表需要的表单数据")
 @EqualsAndHashCode(callSuper = false)
 public class ListUserDemo extends BasePage<ListUserDemo> {
 
     /**
      * 用户状态
      */
-    @ApiModelProperty("用户状态")
+    @ApiModelProperty(value = "用户状态")
     @NotEmpty(message = "用户状态不能为空")
     @Range(min =  -1 , max = 1 , message = "用户状态有误")
     private String status;

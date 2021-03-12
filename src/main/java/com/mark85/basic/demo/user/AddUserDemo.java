@@ -22,7 +22,7 @@ import java.util.Date;
  * @date 2021/03/10 14:08
  */
 @Data
-@ApiModel("添加用户需要的表单数据")
+@ApiModel(value = "添加用户需要的表单数据")
 @EqualsAndHashCode(callSuper = false)
 public class AddUserDemo extends BaseEntity<UserDo> {
     /**

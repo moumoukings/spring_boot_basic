@@ -117,7 +117,7 @@ public class CodeGenerator {
         pc.setEntity("entity");
         pc.setService("service");
         pc.setServiceImpl("service.impl");
-        pc.setMapper("mapper");
+        pc.setMapper("mybatis");
         return pc;
     }
 
@@ -192,7 +192,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return System.getProperty("user.dir") + "/src/main/resources/mapper/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
+                return System.getProperty("user.dir") + "/src/main/resources/mybatis/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
 
