@@ -244,6 +244,9 @@
         <profile>
             <!-- 测试 -->
             <id>test</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
             <properties>
                 <activatedProperties>test</activatedProperties>
             </properties>
@@ -251,6 +254,9 @@
         <profile>
             <!-- 准生产 -->
             <id>pre</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
             <properties>
                 <activatedProperties>pre</activatedProperties>
             </properties>
@@ -258,6 +264,9 @@
         <profile>
             <!-- 生产 -->
             <id>prod</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
             <properties>
                 <activatedProperties>prod</activatedProperties>
             </properties>

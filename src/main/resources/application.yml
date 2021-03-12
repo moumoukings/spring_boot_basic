@@ -9,14 +9,14 @@ spring:
     time-zone: GMT+8
   profiles:
     # 选择环境
-    active: @activatedProperties@
+      active: @activatedProperties@
 #  main:
 #    banner-mode: off
   # 配置数据库连接池
-#  datasource:
+  datasource:
 ##    type: com.zaxxer.hikari.HikariDataSource
 #    type: com.alibaba.druid.pool.DruidDataSource
-#    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
 #    hikari:
 #      # 最小连接
 #      minimum-idle: 5

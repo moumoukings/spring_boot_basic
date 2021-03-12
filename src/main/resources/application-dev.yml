@@ -1,9 +1,9 @@
 spring:
   # 配置数据库连接池
-#  datasource:
-#    url: jdbc:mysql://218.244.150.165:3306/spring_boot_basic?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
-#    username: root
-#    password: root
+  datasource:
+    url: jdbc:mysql://218.244.150.165:3306/spring_boot_basic?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: root
   ### 配置Redis
   redis:
     database: 0
@@ -16,12 +16,6 @@ spring:
 logging:
   level:
     com.mark85.basic.mapper: debug
-
-jdbc:
-  driverClassName: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql://218.244.150.165:3306/spring_boot_basic?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
-  username: root
-  password: root
 
 #zookeeper:
 #  address: 127.0.0.1

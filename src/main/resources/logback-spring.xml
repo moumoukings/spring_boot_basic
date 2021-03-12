@@ -172,7 +172,9 @@
 
     <!--开发环境:打印控制台-->
     <springProfile name="dev">
-        <logger name="org.pc.dao" level="DEBUG"/>
+        <logger name="org.pc.dao" level="DEBUG">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
 
         <root level="info">
             <appender-ref ref="CONSOLE"/>
