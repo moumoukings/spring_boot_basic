@@ -18,6 +18,7 @@
 - 日志配置。
 - JenkinsFile。
 - Redis基于Jedis(单例)。
+- PageHelp分页
 
 -----
 
@@ -719,5 +720,7 @@ mvn clean package -P test
 ### Redis基于Jedis(单例)
 
 ​		该基础框架中使用的是单例配置，若需要改为集群自行修改
+
+### PageHelp分页
 
 ### 补充----
