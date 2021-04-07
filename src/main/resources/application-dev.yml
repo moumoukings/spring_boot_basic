@@ -7,7 +7,7 @@ spring:
   ### 配置Redis
   redis:
     database: 0
-    host: 218.244.150.165
+    host: 127.0.0.1
     port: 6379
     password: 1470634109
     timeout: 3000ms
